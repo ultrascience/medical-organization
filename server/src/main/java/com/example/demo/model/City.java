@@ -7,8 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 import lombok.Getter;
-import lombok.Setter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @Table(name = "cities")
@@ -21,5 +21,13 @@ public class City{
 
     private String name;
     private int population;
+
+    // generate constructor
+    public City(int population, String name, Long id) {
+        this.population = population;
+        this.name = name;
+        this. id = id;
+
+    } 
 
 }
